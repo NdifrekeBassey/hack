@@ -1,0 +1,93 @@
+body {
+    background-color: #fff;
+}
+
+.button {
+    height: 150px;
+    width: 250px;
+    background: linear-gradient(black, red, black);
+    margin-top: 120px;
+    margin-left: 67px;
+    font-size: 50px;
+    z-index: 2;
+    box-shadow: 15px 35px 50px 25px #000;
+}
+
+.move {
+    height: 150px;
+    width: 250px;
+    background: linear-gradient(black, red, black);
+    position: absolute;
+    top: 260px;
+    left: 77px;
+    font-size: 50px;
+    animation: rotate 0.09s infinite linear;
+    z-index: 1;
+    box-shadow: 0px 0px 30px 25px #555;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.back {
+    height: 688px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    animation: back 0.2s infinite linear;
+}
+
+@keyframes back {
+    0% {
+        background: linear-gradient(black, red, black);
+    }
+
+    50% {
+        background: linear-gradient(red, black, red);
+    }
+
+    100% {
+        background: linear-gradient(black, red, black);
+    }
+}
+
+h1 {
+    color: #fff;
+    z-index: 3;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    position: absolute;
+    top: 400px;
+    font-size: 40px;
+    border: 5px double black;
+    margin-left: 0px;
+    background-color: red;
+    width: 250px;
+    border: 5px double #00ff00;
+    box-shadow: 0px 5px 5px 5px #0000ff;
+    margin-top: 90px;
+    left: 60px;
+
+}
+
+h2 {
+    position: relative;
+    top: 200px;
+}
